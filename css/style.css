@@ -1,9 +1,9 @@
 :root {
-	 --font-family: "Space Grotesk", sans-serif;
+	 --font-family: , sans-serif;
 
-	--main-color: #21092f;
-	--second-color: #fff;
-	--light-grey: #dfdee0;
+	--main-color: ;
+	--second-color: ;
+	--light-grey: ;
 	}
 
 h1,
@@ -18,8 +18,8 @@ body {
 	font-family: var(--font-family);
 	font-weight: 500;
 	font-size: 18px;
-	color: var(--main-color);
-	background-color: var(--second-color);
+	color: ;
+	background-color: ;
 	max-width: 1470px;
 	padding: 0 15px;
 	margin:0 auto 0 auto;
@@ -38,110 +38,9 @@ body {
   
 	white-space: nowrap;
 	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
+	clip: rect(0 0 0 0);   
 	overflow: hidden;
   }
 
 
 /* =========================================================== */
-.payment-card {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 349px;
-}
-.contsiner-bg{
-	min-width:483px;
-	min-height: 900px;
-	background-image: url(../img/bg.jpg);
-	background-repeat: no-repeat;
-	background-position: top left;
-	position: relative;
-}
-
-.front-side,
-.back-side{
-	border-radius: 16px;
-	position: absolute;
-}
-.front-side{
-	top: 187px;
-	left: 164px;
-}
-.back-side{
-	top: 469px;
-	left:50%;
-}
-/* ==========FORM============== */
-.form-payment {
-	max-width:381px;
-}
-
-.payment-block{
-	display: block;
-}
-.payment-title {
-	display: block;
-	font-weight: 500;
-	font-size: 12px;
-	letter-spacing: 0.17em;
-	text-transform: uppercase;
-	margin-bottom: 9px;
-}
-.pay-container{
-	display: flex;
-	align-items: end;
-	column-gap: 20px;
-}
-.payment-input{
-	border: 1px solid var(--light-grey);
-	font-weight: 500;
-	border-radius: 8px;
-	padding: 11px 16px;
-	background-color: inherit;
-}
-.payment-input::placeholder{
-	opacity: 0.25;
-}
-.payment-input::-webkit-inner-spin-button,
-.payment-input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-.payment-input[type=number] {
-    -moz-appearance: textfield;
-}
-.payment-input:not(:last-child){
-	margin-right:10px;
-}
-.input-width{
-	width:100%;
-}
-.pay-date{
-	min-width:80px;
-	height: 45px;
-}
-.pay-cvc{
-	min-width: 191px;
-}
-.pay-lab{
-	margin-bottom:26px;
-	display: block;
-}
-.pay-btn{
-	width: 100%;
-	margin-top: 40px;
-	padding: 15px 30px;
-	border-radius: 8px;
-	border: none;
-	background-color: var(--main-color);
-	color: var(--second-color);
-	transition: background-color 0.3s ease;
-}
-.pay-btn:hover,
-.pay-btn:focus {
-    background-color:#35104a;  
-}
-.titel{
-	margin-left: -20px;
-}
