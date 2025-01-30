@@ -6,7 +6,7 @@
 	 --ocean: #404bbf;
 	 --navy-blue: #2e2f42;
 	 --green: #31d0aa;
-	 --slate: #434455;
+	 --slate: rgb(67, 68, 85);
 	 --light-slate: #8e8f99;
 	 --cornflower: #e7e9fc;
 	 --cloud: #f4f4fd;
@@ -17,14 +17,6 @@
 
 	}
 
-h1,
-h2,
-p {
-	margin: 0;
-}
-a {
-	text-decoration: none;
-}
 body {
 	font-family: var(--font-family);
 	font-weight: 500;
@@ -33,15 +25,56 @@ body {
 	letter-spacing:0.02em;
 	color:var(--slate) ;
 	
-	background-color:rgb(149, 147, 147) ;
-	max-width: 1470px;
+	background-color:rgb(216, 214, 214) ;
+		
+}
+
+h1,h2,h3, h4,h5,h6,p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+img{
+	display: block;
+}
+
+
+/* =========================================================== */
+ /*General styles*/
+ .container{	
+	max-width: 1158px;
 	padding: 0 15px;
 	margin:0 auto 0 auto;
+
+	outline: 2px solid coral;
+ }
+
+ .list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
-	/* height: 100vh;  */
+.link{
+	color: inherit;
+	text-decoration: none;
+}
+ .btn{
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	color: var(--white);
+	border-radius: 4px;
+	padding: 16px 32px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	background: var(--iris);	
+ }
+ .btn:hover,
+ .btn:focus{
+	background-color: var(--ocean);
+ }
 
 
-	/* Hidden title */
+ 	/* Hidden title */
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -55,23 +88,6 @@ body {
 	clip: rect(0 0 0 0);   
 	overflow: hidden;
   }
-
-
-/* =========================================================== */
- /*General styles*/
-
- .list{
-	list-style: none;
- }
- .btn{
-	font-weight: 500;
-	letter-spacing: 0.04em;
-	color: var(--white);
-	border-radius: 4px;
-	padding: 16px 32px;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-	background: var(--iris);	
- }
 
  /* ======header===== */
  /* =====footer===== */

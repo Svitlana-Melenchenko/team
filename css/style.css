@@ -1,3 +1,55 @@
-.hero-title{
+/* .hero-title{
     font-size: 40px;
+} */
+
+/* ==========HEADER========== */
+.head-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
+.logo {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+    margin-right: 77px;
+}
+.logo-color {
+    color: var(--navy-blue);
+}
+
+.nav {
+    display: flex;
+
+}
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 40px;
+}
+.menu-items {
+    color: var(--navy-blue);
+}
+.menu-item {
+    
+}
+.nav-info {
+    font-weight: 400;
+    display: flex;
+}
+.info-email {
+}
+.info-tel {
+}
+/* ==========HEADER========== */
+/* ==========HEADER========== */
+/* ==========HEADER========== */
+/* ==========HEADER========== */
+/* ==========HEADER========== */
+/* ==========HEADER========== */
+/* ==========HEADER========== */
