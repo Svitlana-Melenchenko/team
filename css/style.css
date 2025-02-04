@@ -5,8 +5,7 @@
 /* ==========HEADER========== */
 .head-item {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: center; 
 }
 .logo {
     font-family: var(--second-family);
@@ -21,30 +20,46 @@
 .logo-color {
     color: var(--navy-blue);
 }
-
 .nav {
+  
     display: flex;
-
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 40px;
+     column-gap: 40px;
 }
 .menu-items {
     color: var(--navy-blue);
-}
-.menu-item {
     
+}
+.menu-item{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.menu-item:hover,
+.menu-item:focus {   
+    color: var(--ocean);
 }
 .nav-info {
     font-weight: 400;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
 }
-.info-email {
+.info-email:hover,
+.info-email:focus,
+.info-tel:hover,
+.info-tel:hover:focus{
+    color: var(--ocean);
 }
-.info-tel {
+ {
 }
 /* ==========HEADER========== */
 /* ==========HEADER========== */
