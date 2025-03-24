@@ -97,12 +97,20 @@ margin-bottom: 48px;
 .feature-card {
     flex-basis: calc((100% - 24px * 3)/4);
 }
-.feature-card-img {
+.feature-card-box{
+    background-color: var(--cloud);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 112px;
+   
+    margin-bottom: 8px;
 }
 .feature-card-title {
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 1.14;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue); 
     }
@@ -111,8 +119,8 @@ margin-bottom: 48px;
     }
 .feature-card-text {
     font-weight: 400;
-    font-size: 17px;
-    line-height: 1.41;
+    font-size: 16px;
+    line-height: 1.5;
     }
 
 /* ==========doing========== */
@@ -178,11 +186,39 @@ margin-bottom: 48px;
     font-weight: 400;
     text-align: center;
 }
-.team-card-cos {
+
+.team-card-subtitle:not(:last-child){
+    margin-bottom: 8px;
+} 
+.team-card-soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    
 }
-.team-cos-item {
+.team-soc-item {
 }
-.team-cos-icon {
+.team-soc-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris);
+    border-radius: 50%;
+}
+.team-soc-icon:hover,
+.team-soc-icon:focus{
+background-color: var(--ocean);
+}
+
+.team-soc-svg{
+    fill: currentColor;
+}
+.twiter{
+    fill: var(--white);
 }
 /* ==========HEADER========== */
 /* ==========HEADER========== */
