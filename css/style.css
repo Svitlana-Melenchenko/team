@@ -41,9 +41,14 @@
 .menu-item,
 .info-email,
 .info-tel {
-    display: block;
+    /* display: block; */
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding-top: 24px;
     padding-bottom: 24px;
+    color: var(--slate);
 }
 .menu-item:hover,
 .menu-item:focus {   
@@ -62,14 +67,26 @@
 .info-tel:hover:focus{
     color: var(--ocean);
 }
+.info-email-svg,
+.info-phone-svg {
+fill: currentColor;
+width: 20px;
+height: 20px;
+
+}
  
 /* ==========MAIN========== */
 /* ==========hero========== */
 .hero {
-    background-color: var(--navy-blue);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/main/hero/people-office.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
     padding-top: 188px;
     padding-bottom: 188px;
 }
+
+ /* linear-gradient(rgba(var(--navy-rgb), 0.7), rgba(var(--navy-rgb), 0.7)),  */
 .hero-title {
 font-weight: 700;
 font-size: 56px;
@@ -85,10 +102,6 @@ margin-bottom: 48px;
     margin: 0 auto;
 }
 /* ==========feature========== */
-.feature {
-    padding-top: 120px;
-    padding-bottom: 96px;
-}
 .feature-list {
     display: flex;
     flex-wrap: wrap;
@@ -128,7 +141,7 @@ margin-bottom: 48px;
 .doing {
     padding-bottom: 120px;
    
-    outline: 5px solid coral;
+    /* outline: 5px solid coral; */
 
 }
 .doing-title:not(:last-child) {
@@ -148,9 +161,7 @@ margin-bottom: 48px;
 }
 /* ==========team========== */
 .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background-color: var(--cloud);
+   background-color: var(--cloud);
 }
 
 .team-title {
@@ -220,8 +231,87 @@ background-color: var(--ocean);
 .twiter{
     fill: var(--white);
 }
-/* ==========HEADER========== */
-/* ==========HEADER========== */
+
+/* ==========CUSTOMERS========== */
+.customers-title {
+}
+.title {
+}
+.customers-list {
+}
+.list {
+}
+.customers-card {
+}
+.customers-card-link {
+}
+.customers-card-svg {
+}
 
 
-/*
+
+/* ===================PORTFOLIO================================ */
+.portfolio {
+    padding-top: 96px;
+
+}
+.portfolio-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom:72px;
+}
+.portfolio-menu-item {
+    padding: 12px 24px;
+    background-color: var(--cloud);
+    text-align: center;
+    color: var(--iris);
+    cursor: pointer;
+}
+.portfolio-menu-item:hover,
+.portfolio-menu-item:focus{
+   background-color: var(--iris); 
+   color:var(--white) ;
+}
+
+
+
+.portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+   
+
+}
+
+
+.portfolio-card-list {
+    flex-basis: calc((100% - 24px * 2) / 3);
+     
+}
+.portfolio-card-link {
+    
+}
+.portfolio-item {
+    padding:32px 16px;
+     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.portfolio-title {
+   font-size: 20px; 
+   color: var(--navy-blue);
+   margin-bottom: 8px;
+}
+.portfolio-subtitle {
+    font-weight: 400;
+}
+.portfolio-text {
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+    background-color: var(--iris);
+    padding: 40px 32px;
+    min-height: 300px;
+
+}

@@ -88,6 +88,10 @@ img{
 	clip: rect(0 0 0 0);   
 	overflow: hidden;
   }
+  .section-pading{
+	padding-top: 120px;
+	padding-bottom: 120px;
+  }
   .section-title{
 	font-family: var(--font-family);
 	font-weight: 700;
